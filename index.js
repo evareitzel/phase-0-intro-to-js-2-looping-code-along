@@ -31,7 +31,7 @@ function writeCards(guestName, eventName) {
     return messages;
 }
 
-writeCards();
+// writeCards();
 
 
 // While loop
