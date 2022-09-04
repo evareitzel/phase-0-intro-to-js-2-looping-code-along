@@ -1,46 +1,19 @@
 // Code your solutions in this file
 
-// for([initialization]; [condition]; [iteration]) {
-//     [loop body]
-// }
+// const names = ['Brittney', 'Michelle', 'Billy']
 
-for (let age = 30; age < 40; age++) {
-    console.log(`I'm ${age} years old. Happy birthday to me!`);
-    // debugger;
+function writeCards(names, event){
+    let cards = []
+    for(i=0; i < names.length; i++){
+        cards.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
+    }
+    return cards
 }
 
-const gifts = ["teddy bear", "drone", "doll"];
-
-function wrapGifts(gifts) {
-    for (let i = 0; i < gifts.length; i++) {
-        console.log(`Wrapped ${gifts[i]} and added a bow!`);
-        // debugger;
+function countDown(num){
+    while(num>0){
+        console.log(num)
+        num -= 1
     }
-
-    return gifts;
-}
-
-wrapGifts(gifts);
-
-
-function writeCards(guestName, eventName) {
-    const messages = [];
-    for (let i = 0; i < guestName.length; i++) {
-        messages.push(`Thank you, ${guestName[i]}, for the wonderful ${eventName} gift!`);
-    }
-    return messages;
-}
-
-
-// While loop
-
-// while([condition]) {
-//     [loop body]
-// }
-
-function countDown(number) {
-    while (number >= 0) {
-        console.log(number);
-        number--;
-    }
+    console.log(num)
 }
